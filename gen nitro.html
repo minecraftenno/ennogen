@@ -1,0 +1,105 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="styyle.css" />
+<title>OfficialNitroGenerator</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta property="og:type" content="website">
+<meta property="og:title" content="NitroGen" />
+<meta property="og:description" content="Discord Nitro Generator" />
+<meta property="og:url" content="http://sitesgithub.github.io/nitro/index.html" />
+<meta property="og:image" content="https://images.discordapp.net/avatars/482584715673600026/3813e13cf3e89eb5ab314dcda58f5d96.png?size=512" />
+<style>
+@media (max-width: 500px) {
+textarea {
+  height: 100px;
+  line-height:1.25;
+}
+button {
+
+    background-color:#000000;
+	cursor:pointer;
+	color:#00ff00;
+	font-family:Arial;
+	font-size:50px;
+	padding:50px 60px;
+	text-decoration:none;
+}
+}
+
+.button0 {
+  font-size:20px;
+  padding:50px 60px;
+}
+</style>
+</head>
+<body>
+
+<style>
+  textarea {
+    background-image: url("https://support.discord.com/hc/article_attachments/360013500032/nitro_gif.gif");
+    border: 1px solid #000;
+    color: #00ff00;
+    padding: 8px;
+    font-family: courier new;
+}
+
+body {
+    background-color: brown;
+    width: 100%;
+}
+
+input {
+    background-color: #000;
+    color: #00ff00;
+}
+
+button {
+	background-color:#000000;
+	cursor:pointer;
+	color:#00ff00;
+	font-family:Arial;
+	font-size:25px;
+	padding:7px 8px;
+	text-decoration:none;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+<div>
+<h1 style="font-family: Roboto; color: #00ff00">DISCORD NITRO GENERATOR</h1>
+<textarea id="a" rows="25" cols="125" readonly style="resize: none;">
+Merci d'utiliser le EnnoGen !
+  
+―――――――――――――――――――――――――――――――――――――――
+EnnoGen - Nitro Uncheck
+Les codes ne fonctionne pas tous dont le nom Unchecks
+―――――――――――――――――――――――――――――――――――――――
+
+</textarea>
+
+<p style="font-family: Arial; color: #00ff00">Combien voulez-vous générer de codes par secondes ? (5 = par défaut)</p>
+<input type="text" id="speed" value="5">
+<p></p>
+<button id='generate' class="button">
+  Commencer la génération !
+</button>
+<p></p>
+<button id='stop' class="button">
+  Arreter la génération !
+</button>
+    <p></p>
+<button id='save' onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Unchecked Nitro Codes.txt', 'Voici tes codes :\n\n' + document.getElementById('b').value + '\nTout ces codes ont étés générer avec le EnnoGen')" class="button">Enregistrer les nitros unchecks</button>
+    <p></p>
+<p></p>
+<button onclick="stop(); document.getElementById('a').value = 'Merci dutiliser le EnnoGen !\n\n―――――――――――――――――――――――――――――――――――――――\nEnnoGen - Nitro Uncheck\nLes codes ne fonctionne pas tous dont le nom Unchecks.\n―――――――――――――――――――――――――――――――――――――――\n\n'; document.getElementById('b').value = '';" class="button" id="clear">Reset les Nitros Unchecks</button>
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly>
+</textarea>
+	<script src="main.js"></script>
+</div>
+	<p></p>
+</body>
+</html>
